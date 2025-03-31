@@ -65,7 +65,14 @@ public String getParent()//获取上层文件目录路径。若无，返回null
 1.是Unicode字符集的一种编码方案，采取可变长编码方案，共分四个长度区：1个字节，2个字节，3个字节，4个字节
 2.英文字符、数字等只占1个字节（兼容标准ASCII编码），汉字字符占用3个字节。
 ```
-![Unicode字符集](./image/unicode.png)
+<!-- ![Unicode字符集](./image/unicode.png) -->
+```java
+UTF-8编码方式(二进制)
+0xxxxxxx （ASCII码）
+110xxxxx 10xxxxxx
+1110xxxx 10xxxxxx 10xxxxxx
+11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+```
 ```java
 1.ASCII字符集：只有英文、数字、符号等，占1个字节。
 2.GBK字符集：汉字占2个字节，英文、数字占1个字节。
